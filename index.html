@@ -70,7 +70,7 @@ Many websites will use what is called CSS grid layouts, where you will have a he
     
     <div class=" p-3 my-3 border bg-info">
         <h2 class="">Services & Price Estimates:</h2>
-        <p class="p-4 my-3" style="font-size: 20px">1. General Checkup ($100)           2. Clinical Exercise Sessions ($150)</p>
+        <p style="font-size: 20px; padding-left: 1.5rem">1. General Checkup ($100)      2. Clinical Exercise Sessions ($150)</p>
         <p style="font-size: 20px; padding-left: 1.5rem">3. Hydrotherapy ($175)         4. Podiatry ($125)</p>
         <p style="font-size: 20px; padding-left: 1.5rem">5. Hand Therapy ($125)         6. Musculoskeletal Therapy ($170)</p>
     </div>
@@ -79,23 +79,39 @@ Many websites will use what is called CSS grid layouts, where you will have a he
     We can also use buttons to expand some hidden options
     https://getbootstrap.com/docs/5.0/components/collapse/
     -->
-    
-    <p class="bg-info text-black" style="font-size: 25px">Services & Appointment Booking</p>
 
-    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    <button class="btn btn-primary btn-block" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
         Click here to book an appointment!
     </button>
 
     <div class="collapse" id="collapseExample">
         <div class="card card-body">
-            Here we have some hidden data to avoid cluttering the page with information
+            Please select the services you would like to book an appointment for:
             <form action="/action_page.php">
-            <label for="birthday">Birthday:</label>
-            <input type="date" id="birthday" name="birthday">
-            <input type="submit">
+            <label for="appointment">Select appointment date:</label>
+            <input type="date" id="appointment" name="appointment">
+            <br>
+            <input type="checkbox" id="service1" name="service1" value="GeneralCheckup">
+            <label for="service1"> General Checkup</label><br>
+            <input type="checkbox" id="service2" name="service2" value="ClinicalExerciseSessions">
+            <label for="service2"> Clinical Exercise Sessions</label><br>
+            <input type="checkbox" id="service3" name="service3" value="Hydrotherapy">
+            <label for="service3"> Hydrotherapy</label><br>
+            <input type="checkbox" id="service4" name="service4" value="Podiatry">
+            <label for="service4"> Podiatry</label><br>
+            <input type="checkbox" id="service5" name="service5" value="Hand Therapy">
+            <label for="service5"> Hand Therapy</label><br>
+            <input type="checkbox" id="service6" name="service6" value="MusculoskeletalTherapy">
+            <label for="service6"> Musculoskeletal Therapy</label><br><br>
+            <input type="submit" value="Submit">
             </form>
+            
+            
         </div>
     </div>
+    
+    <br>
+    <br>
 
 </div>
 <!-- here we input our javascript helper -->
