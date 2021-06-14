@@ -31,109 +31,21 @@ Many websites will use what is called CSS grid layouts, where you will have a he
 
     <nav class="navbar bg-primary text-white p-3 my-3 ">
         <h1 style="text-align:center"><img src="images/company_logo.png" width="150" height="150"> Back In Motion</h1>
-        <h3 style="text-align:center">Ottawa's best physiotherapy clinic</h3>
     </nav>
 
     <div class=" p-3 my-3 border bg-info">
-        <h2 class=""> Welcome to Back In Motion clinic!</h2>
-        <p class="p-4 my-3" style="font-size: 20px">We are a physiotherapy clinic located in Ottawa. Specically at 420 Prince of Wales Drive, Nepean, ON.</p>
+        <h2 class=""> Welcome to Back In Motion clinic! Ottawa's best physiotherapy clinic.</h2>
+        <p class="p-4 my-3" style="font-size: 20px">We are located in the south of Ottawa. Specically at 420 Prince of Wales Drive, Nepean, ON.</p>
         <p style="font-size: 20px; padding-left: 1.5rem">Don't hesitate, your health is important to us. Check our services below and book an appointment soon.</p>
     </div>
-    <!--
-    Tables are one of many ways to organize information easily.
-    It is a good way to list of prices, or services in a business website
-    https://getbootstrap.com/docs/5.0/content/tables/
-    -->
-    <table class="table table-info table-hover">
-        <thead>
-            <tr>
-                <th scope="col"><h2>Service</h2></th>
-                <th scope="col"><h2>Description</h2></th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Placeholder 1</td>
-                <td>Placeholder 2</td>
-            </tr>
-            <tr>
-                <td>Placeholder 1</td>
-                <td>Placeholder 2</td>
-            </tr>
-            <tr>
-                <td>Placeholder 1</td>
-                <td>Placeholder 2</td>
-            </tr>
-        </tbody>
-    </table>
-    <h1>Here is an alert!</h1>
-    <!-- Alerts are an easy way to grab the users attention, this page goes into more detail
-    https://getbootstrap.com/docs/5.0/components/alerts/
-    -->
-    <p>This indicated something important in the page</p>
-    <div class="alert alert-danger alert-dismissible fade show" role="alert">
-        <strong>Yikes!</strong> Perhaps you left one of the fields empty for this to appear?
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-    </div>
 
-    <h1>Button States</h1>
-    <!--
-    Buttons can be used for submitting forms, triggering events among many other things.
-    https://getbootstrap.com/docs/5.0/components/buttons/
-    -->
-
-    <button type="button" class="btn btn-warning">Primary Button</button>
-    <button type="button" class="btn btn-warning active">Active Button</button>
-    <button type="button" class="btn btn-warning" disabled>Disabled Button</button>
-
-    <h1>Modal Example</h1>
-
-    <!-- Button trigger modal
-    We use the same button code from above, but now we can trigger a modal to appear.
-    The bootstrap tutorial includes many different types of modals that you can explore
-    https://getbootstrap.com/docs/5.0/components/modal/
-    -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        Launch demo modal
-    </button>
-
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    In the body we can add various components. In this example some radio buttons
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
-                            Yes
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                        <label class="form-check-label" for="flexRadioDefault2">
-                            No
-                        </label>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- Cards are quite useful when building a website. They are a useful way to organize information.
     They can be organized using a CSS grid or other layout options.
     https://getbootstrap.com/docs/5.0/components/card/
     -->
 
-    <h1>Meet the Physicians!</h1>
+    <p class="bg-info text-black" style="font-size: 1.5em">Meet our experts</p>
     <div class="row justify-content-around">
         <div class="card" style="width: 18rem;">
             <img src="images/doctor.jpg" class="card-img-top" alt="...">
