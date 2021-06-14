@@ -50,19 +50,19 @@ Many websites will use what is called CSS grid layouts, where you will have a he
         <div class="card" style="width: 18rem;">
             <img src="images/doctor1.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-                <p class="card-text">JOHN WHALEY, Our executive Director & Physiotherapist with 15 years of experience with stellar reviews.</p>
+                <p class="card-text">JOHN WHALEY, our Executive Director & Physiotherapist with 15 years of experience with stellar reviews.</p>
             </div>
         </div>
         <div class="card" style="width: 18rem;">
             <img src="images/doctor2.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-                <p class="card-text">PHANG HOONG, our clinic manager & physiotherapist with 10 years of experience. Greatly experienced in working with children patients.</p>
+                <p class="card-text">PHANG HOONG, our Clinic Manager & Physiotherapist with 10 years of experience. Greatly experienced in working with children patients.</p>
             </div>
         </div>
         <div class="card" style="width: 18rem;">
             <img src="images/doctor3.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-                <p class="card-text">SARAH RAGUSEO, our excellent physiotherapist with 8 years of experience. Greatly experienced in working with elderly patients.</p>
+                <p class="card-text">SARAH RAGUSEO, our excellent Physiotherapist with 8 years of experience. Greatly experienced in working with elderly patients.</p>
             </div>
         </div>
     </div>
@@ -71,7 +71,7 @@ Many websites will use what is called CSS grid layouts, where you will have a he
     We can also use buttons to expand some hidden options
     https://getbootstrap.com/docs/5.0/components/collapse/
     -->
-    <h1>More Information</h1>
+    <p class="bg-info text-black" style="font-size: 25px">Services & Appointment Booking</p>
 
     <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
         Button To Expand Options
@@ -80,6 +80,11 @@ Many websites will use what is called CSS grid layouts, where you will have a he
     <div class="collapse" id="collapseExample">
         <div class="card card-body">
             Here we have some hidden data to avoid cluttering the page with information
+            <form action="/action_page.php">
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday">
+            <input type="submit">
+            </form>
         </div>
     </div>
 
