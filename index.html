@@ -86,11 +86,17 @@ Many websites will use what is called CSS grid layouts, where you will have a he
 
     <div class="collapse" id="collapseExample">
         <div class="card card-body">
-            Please select the services you would like to book an appointment for:
             <form action="/action_page.php">
-            <label for="appointment">Select appointment date:</label>
-            <input type="date" id="appointment" name="appointment">
-            <br>
+            <label for="appointment">Please select appointment date:</label>
+            <input type="date" id="appointment" name="appointment"><br><br>
+            <label for="appt">Please enter appointment time:</label>
+            <input type="time" id="appt" name="appt"><br><br>
+            Please enter your contact info.
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="phone">Phone number:</label>
+            <input type="text" id="phone" name="phone"><br><br>
+            Please select the services you would like to book an appointment for:
             <input type="checkbox" id="service1" name="service1" value="GeneralCheckup">
             <label for="service1"> General Checkup</label><br>
             <input type="checkbox" id="service2" name="service2" value="ClinicalExerciseSessions">
@@ -110,6 +116,9 @@ Many websites will use what is called CSS grid layouts, where you will have a he
         </div>
     </div>
     
+    <br>
+    <br>
+    <br>
     <br>
     <br>
 
